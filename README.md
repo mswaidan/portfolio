@@ -1,6 +1,6 @@
 # portfolio
 
-> A Vue.js project
+> A portfolio platform, built using Vue.js, Vuematerial, and Firebase
 
 ## Build Setup
 
@@ -17,5 +17,5 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+You'll need to update main.js with your firebase project info. The bio component will not work correctly for git clones.
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
