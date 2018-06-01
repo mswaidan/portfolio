@@ -9,7 +9,7 @@
       </md-toolbar>
       <p class="md-subheading">I'm a designer interested in computation & digital fabrication. <br>I get really excited about <strong>connecting things on the web.</strong></p>
       <p>Recently, I've been contributing to <a href="http://speckle.works">Speckle.works</a></p>
-      <p>This site was built from scratch in about a day using <a href="http://www.vuejs.org">Vue.js</a>, <a href="http://vuematerial.io">Vuematerial</a> and <a href="http://firebase.google.com">Firebase</a>. You can check the source code out here: <a href="http://speckle.works">Speckle.works</a></p>
+      <p>This site was built from scratch in about a day using <a href="http://www.vuejs.org">Vue.js</a>, <a href="http://vuematerial.io">Vuematerial</a> and <a href="http://firebase.google.com">Firebase</a>. You can check the source code out here: <a href="http://github.com/mswaidan/portfolio">Github</a></p>
       <md-tabs md-dynamic-height>
         <md-tab md-label="Education">
           <md-list class="md-triple-line">
