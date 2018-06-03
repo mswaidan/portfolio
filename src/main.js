@@ -8,15 +8,13 @@ import 'firebase/firestore'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import VueCarousel from 'vue-carousel'
+import fireConfig from './config'
 
 Vue.config.productionTip = false
 Vue.use(VueMaterial)
 Vue.use(VueCarousel)
 Vue.use(VueFire)
-firebase.initializeApp({
-  projectId: 'portfolio-513c1',
-  databaseURL: 'https://portfolio-513c1.firebaseio.com'
-})
+firebase.initializeApp(fireConfig)
 
 export const db = firebase.firestore()
 const settings = {timestampsInSnapshots: true}
