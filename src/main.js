@@ -5,6 +5,7 @@ import App from './App'
 import VueFire from 'vuefire'
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+import 'firebase/auth'
 import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.min.css'
 import VueCarousel from 'vue-carousel'
@@ -14,8 +15,10 @@ Vue.config.productionTip = false
 Vue.use(VueMaterial)
 Vue.use(VueCarousel)
 Vue.use(VueFire)
+
 firebase.initializeApp(fireConfig)
 
+export const auth = firebase.auth
 export const db = firebase.firestore()
 const settings = {timestampsInSnapshots: true}
 db.settings(settings)

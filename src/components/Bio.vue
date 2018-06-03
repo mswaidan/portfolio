@@ -1,6 +1,6 @@
 <template>
   <div class="md-layout md-alignment-center-center">
-    <div class="md-layout-item md-size-50 md-small-size-80">
+    <div class="md-layout-item md-size-75 md-small-size-100">
       <md-toolbar class="md-transparent" md-elevation="0">
         <h3 class="md-title" style="flex: 1">Hello, I'm Matt Swaidan</h3>
         <md-button class="md-icon-button" @click="$emit('close-bio')">

@@ -1,14 +1,9 @@
 <template>
-  <div class="hello">
-    Hello
-    <div v-for='(project, idx) in projects' :key='idx'>
-      {{project}}
-    </div>
+  <div class="login">
   </div>
 </template>
 
 <script>
-import { db } from '../main'
 
 export default {
   name: 'HelloWorld',
@@ -19,11 +14,10 @@ export default {
   },
   firestore () {
     return {
-      projects: db.collection('projects').orderBy('date')
     }
   },
   mounted:  function () {
-    console.log(db)
+    console.log(firebase)
   }
 }
 </script>

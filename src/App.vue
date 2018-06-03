@@ -13,15 +13,15 @@
               <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-513c1.appspot.com/o/160317-HEAD-SHOTS-29.jpg?alt=media&token=730bcb3b-8e2e-4d4f-8848-27c299d3fae4">
             </md-avatar>
           </md-button>
-          <md-button @click="showAdmin = !showAdmin" class="md-icon-button">
+          <md-button @click="showAddProject= !showAddProject" class="md-icon-button">
             <md-icon>note_add</md-icon>
           </md-button>
         </div>
       </md-app-toolbar>
       <md-app-content> 
-        <Bio v-on:close-bio="showBio = false" v-if="showBio"/>
-        <add-project v-if="showAdmin"/>
-        <Gallery v-if="!showAdmin && !showBio" :projects='filteredProjects'/>
+        <bio v-on:close-bio="showBio = false" v-if="showBio"/>
+        <add-project v-on:close-add-project="showAddProject = false" v-if="showAddProject"/>
+        <gallery v-if="!showAddProject && !showBio" :projects='filteredProjects'/>
       </md-app-content>
     </md-app>
   </div>
@@ -44,7 +44,7 @@ export default {
   },
   data () {
     return {
-      showAdmin: false,
+      showAddProject: false,
       showBio: false,
       projects: [],
       tags: [],
