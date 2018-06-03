@@ -65,7 +65,7 @@
 import { db } from '../main'
 
 export default {
-  name: 'Admin',
+  name: 'AddProject',
   data () {
     return {
       projectName: null,

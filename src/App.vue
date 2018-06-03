@@ -20,7 +20,7 @@
       </md-app-toolbar>
       <md-app-content> 
         <Bio v-on:close-bio="showBio = false" v-if="showBio"/>
-        <Admin v-if="showAdmin"/>
+        <add-project v-if="showAdmin"/>
         <Gallery v-if="!showAdmin && !showBio" :projects='filteredProjects'/>
       </md-app-content>
     </md-app>
@@ -30,7 +30,7 @@
 <script>
 
 import Gallery from './components/Gallery'
-import Admin from './components/Admin'
+import AddProject from './components/AddProject'
 import Bio from './components/Bio'
 
 import { db } from './main'
@@ -39,7 +39,7 @@ export default {
   name: 'App',
   components: {
     Gallery,
-    Admin,
+    AddProject,
     Bio
   },
   data () {
